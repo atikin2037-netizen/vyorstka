@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1004937544",
+    "title": "Авиасейлс",
+    "username": "aviasales",
+    "type": "brand",
+    "added": "2026-09-27"
+  },
+  {
+    "id": "1002489170",
+    "title": "Т-Банк",
+    "username": "tbank",
+    "type": "brand",
+    "added": "2026-09-27"
+  },
+  {
+    "id": "1011280703",
+    "title": "Альфа-Банк",
+    "username": "AlfaBank",
+    "type": "brand",
+    "added": "2026-09-27"
+  },
+  {
+    "id": "1054210809",
+    "title": "Кинопоиск",
+    "username": "kinopoisk",
+    "type": "brand",
+    "added": "2026-09-27"
+  },
+  {
+    "id": "1595879994",
+    "title": "Самокат",
+    "username": "samokatwithlove",
+    "type": "brand",
+    "added": "2026-09-27"
+  },
+  {
+    "id": "1817692978",
+    "title": "Додо Пицца Россия",
+    "username": "dodorus",
+    "type": "brand",
+    "added": "2026-09-27"
+  },
+  {
+    "id": "1735320397",
+    "title": "Яндекс Маркет",
+    "username": "yndx_market",
+    "type": "brand",
+    "added": "2026-09-27"
+  },
+  {
+    "id": "1340266400",
+    "title": "Купер",
+    "username": "kuper_ru",
+    "type": "brand",
+    "added": "2026-09-27"
+  },
+  {
+    "id": "1723289922",
+    "title": "Вкусно — и точка",
+    "username": "vit_russia",
+    "type": "brand",
+    "added": "2026-09-27"
+  },
+  {
+    "id": "1009352913",
+    "title": "Okko Кино",
+    "username": "okkomovies",
+    "type": "brand",
+    "added": "2026-09-27"
+  }
+]
