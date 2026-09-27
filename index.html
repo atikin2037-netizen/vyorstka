@@ -1,0 +1,429 @@
+<title>Утренняя вёрстка</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F2F3EF;
+  --surface:#FAFBF8;
+  --ink:#15171B;
+  --ink-2:#3A3F46;
+  --muted:#686E75;
+  --rule:#D6D9D2;
+  --rule-strong:#15171B;
+  --accent:#2C44C4;
+  --ads:#B8431C;
+  --ai:#2C44C4;
+  --jobs:#0F7458;
+  --design:#8438AA;
+  --bar-track:#E3E6E0;
+  --focus:#2C44C4;
+  --display:"Unbounded","Arial Black",system-ui,sans-serif;
+  --body:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#111317;
+    --surface:#181B20;
+    --ink:#ECEDE9;
+    --ink-2:#C9CCC6;
+    --muted:#979DA4;
+    --rule:#2B3037;
+    --rule-strong:#ECEDE9;
+    --accent:#8C9DF5;
+    --ads:#F08A5E;
+    --ai:#8C9DF5;
+    --jobs:#4CC59F;
+    --design:#CB8BEA;
+    --bar-track:#252A31;
+    --focus:#8C9DF5;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#111317;
+  --surface:#181B20;
+  --ink:#ECEDE9;
+  --ink-2:#C9CCC6;
+  --muted:#979DA4;
+  --rule:#2B3037;
+  --rule-strong:#ECEDE9;
+  --accent:#8C9DF5;
+  --ads:#F08A5E;
+  --ai:#8C9DF5;
+  --jobs:#4CC59F;
+  --design:#CB8BEA;
+  --bar-track:#252A31;
+  --focus:#8C9DF5;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;padding-inline:16px;padding-block:0 64px}
+.wrap{max-width:1120px;margin:0 auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:2px}
+
+/* Masthead */
+.mast{padding-block:32px 20px;border-bottom:3px solid var(--rule-strong);display:grid;gap:14px}
+.mast-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.wordmark{font-family:var(--display);font-weight:700;font-size:clamp(34px,7.4vw,84px);line-height:.95;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.wordmark span{color:var(--accent)}
+.lede{margin:0;max-width:60ch;color:var(--ink-2);font-size:16px}
+
+/* Controls */
+.controls{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--rule);padding-block:10px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.tabs{display:flex;flex-wrap:wrap;gap:4px}
+.tab{appearance:none;border:1px solid transparent;background:none;color:var(--ink-2);font:500 14px/1 var(--body);padding:8px 12px;border-radius:999px;cursor:pointer;display:inline-flex;gap:7px;align-items:center}
+.tab:hover{border-color:var(--rule)}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--bg)}
+.tab .dot{width:8px;height:8px;border-radius:50%;background:var(--c,var(--muted))}
+.tab .n{font-family:var(--mono);font-size:11px;opacity:.7}
+.region{display:flex;gap:2px;border:1px solid var(--rule);border-radius:999px;padding:2px}
+.region button{appearance:none;border:0;background:none;color:var(--muted);font:500 13px/1 var(--body);padding:6px 10px;border-radius:999px;cursor:pointer}
+.region button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 0 0 1px var(--rule)}
+.search{margin-left:auto;flex:1 1 220px;max-width:320px;position:relative}
+.search input{width:100%;font:15px var(--body);color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:9px 12px 9px 34px}
+.search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted)}
+
+/* Lead */
+.lead{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:32px;padding-block:32px;border-bottom:1px solid var(--rule)}
+.lead h2{font-family:var(--display);font-weight:700;font-size:clamp(24px,3.6vw,40px);line-height:1.1;margin:10px 0 14px;letter-spacing:-.01em;text-wrap:balance}
+.lead p{margin:0;font-size:17px;max-width:62ch;color:var(--ink-2)}
+.lead .side{align-self:end}
+
+/* Meta row */
+.meta{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.chip{color:var(--c);font-weight:500;display:inline-flex;gap:6px;align-items:center}
+.chip::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--c)}
+.flag{border:1px solid var(--rule);border-radius:3px;padding:1px 5px}
+.src{margin-top:12px;font-size:13px;color:var(--muted)}
+.src b{font-weight:500;color:var(--ink-2)}
+
+/* Day */
+.day{padding-top:36px}
+.day-head{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--rule-strong);padding-bottom:8px;margin-bottom:4px}
+.day-head h3{font-family:var(--display);font-weight:500;font-size:20px;margin:0;letter-spacing:-.005em}
+.day-head .count{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:40px}
+.item{padding-block:20px;border-bottom:1px solid var(--rule);display:grid;gap:8px;align-content:start}
+.item h4{font-family:var(--body);font-weight:600;font-size:19px;line-height:1.3;margin:2px 0 0;text-wrap:balance}
+.item p{margin:0;color:var(--ink-2);max-width:65ch}
+.item.wide{grid-column:1 / -1}
+.item img,.lead img{border-radius:6px;display:block;width:100%;height:auto;max-width:100%}
+.cap{font-size:12.5px;color:var(--muted);margin-top:4px}
+.job{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;font-size:14px;margin-top:4px}
+.job dt{color:var(--muted)}
+.job dd{margin:0;font-variant-numeric:tabular-nums}
+.links{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px}
+.links a{color:var(--accent);text-underline-offset:3px}
+
+/* Chart */
+.chart{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:14px 16px 12px;margin-top:6px}
+.chart-t{font-size:13px;font-weight:500;color:var(--ink-2);margin:0 0 10px}
+.bars{display:grid;gap:8px}
+.bar{display:grid;grid-template-columns:minmax(90px,38%) 1fr auto;gap:10px;align-items:center;font-size:13px}
+.bar .l{color:var(--ink-2);overflow-wrap:anywhere;line-height:1.25}
+.bar .track{height:10px;background:var(--bar-track);border-radius:2px;overflow:hidden}
+.bar .fill{height:100%;background:var(--c,var(--accent));border-radius:2px}
+.bar .v{font-family:var(--mono);font-size:12.5px;font-variant-numeric:tabular-nums;color:var(--ink);min-width:4.5ch;text-align:right}
+
+/* States */
+.empty{padding:48px 0;display:grid;gap:8px;max-width:56ch}
+.empty h3{font-family:var(--display);font-weight:500;font-size:22px;margin:0}
+.empty p{margin:0;color:var(--muted)}
+.note{margin-top:40px;padding-top:16px;border-top:1px solid var(--rule);font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 24px}
+mark{background:color-mix(in srgb,var(--accent) 22%,transparent);color:inherit;border-radius:2px;padding:0 1px}
+
+@media (max-width:760px){
+  .lead{grid-template-columns:1fr;gap:18px;padding-block:24px}
+  .grid{grid-template-columns:1fr}
+  .search{max-width:none;margin-left:0}
+  .controls{position:static}
+  .item h4{font-size:18px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .item,.lead{animation:rise .35s ease-out both}
+  @keyframes rise{from{transform:translateY(4px)}to{transform:none}}
+}
+</style>
+
+<div class="wrap">
+  <header class="mast">
+    <div class="mast-top">
+      <span id="issue">Выпуск загружается…</span>
+      <span id="updated"></span>
+    </div>
+    <h1 class="wordmark">Утренняя <span>вёрстка</span></h1>
+    <p class="lede">Факты из Telegram-каналов о рекламе, нейросетях, дизайне и работе. Без мнений авторов, мемов и рекламных постов. Обновляется каждое утро.</p>
+  </header>
+
+  <nav class="controls" aria-label="Разделы">
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="region" role="group" aria-label="География" id="region">
+      <button type="button" data-r="all" aria-pressed="true">Везде</button>
+      <button type="button" data-r="ru" aria-pressed="false">Россия</button>
+      <button type="button" data-r="world" aria-pressed="false">Мир</button>
+    </div>
+    <label class="search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none"></circle><path d="M20 20l-3.5-3.5" fill="none"></path></svg>
+      <input id="q" type="search" placeholder="Поиск по всем выпускам" aria-label="Поиск по всем выпускам" autocomplete="off">
+    </label>
+  </nav>
+
+  <main id="main"></main>
+
+  <footer class="note">
+    <span>Источники — каналы из папок Telegram: Реклама, AI, Вакансии, Дизайн.</span>
+    <span>Цифры приведены так, как их опубликовали каналы; первоисточник указан в тексте.</span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var SECTIONS=[
+    {id:"all",name:"Все"},
+    {id:"ads",name:"Реклама",color:"var(--ads)"},
+    {id:"ai",name:"AI",color:"var(--ai)"},
+    {id:"jobs",name:"Вакансии",color:"var(--jobs)"},
+    {id:"design",name:"Дизайн",color:"var(--design)"}
+  ];
+  var EMPTY={
+    jobs:["Вакансий пока нет","Раздел начнёт наполняться с ближайшего утреннего выпуска: должность, компания, формат, зарплата и контакт."],
+    design:["Раздел готовится","Здесь будут примеры интересного дизайна и новости индустрии. Добавьте каналы в папку «Дизайн» в Telegram — они попадут в выпуск."],
+    ai:["Новостей об ИИ пока нет","Материалы появятся с ближайшего утреннего выпуска."],
+    ads:["Новостей о рекламе пока нет","Материалы появятся с ближайшего утреннего выпуска."]
+  };
+  var MONTHS=["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
+  var WD=["Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота"];
+
+  var state={section:"all",region:"all",q:""};
+  var days=[];      // [{date, items}]
+  var updated=null;
+
+  try{
+    var h=(location.hash||"").slice(1);
+    if(SECTIONS.some(function(s){return s.id===h})) state.section=h;
+  }catch(e){}
+
+  function el(tag,attrs,kids){
+    var n=document.createElement(tag);
+    if(attrs) for(var k in attrs){
+      if(k==="text") n.textContent=attrs[k];
+      else if(k==="style") n.setAttribute("style",attrs[k]);
+      else n.setAttribute(k,attrs[k]);
+    }
+    (kids||[]).forEach(function(c){ if(c!=null) n.appendChild(typeof c==="string"?document.createTextNode(c):c); });
+    return n;
+  }
+  function parseDate(s){var p=s.split("-");return new Date(+p[0],+p[1]-1,+p[2]);}
+  function fmtDay(s){var d=parseDate(s);return WD[d.getDay()]+", "+d.getDate()+" "+MONTHS[d.getMonth()];}
+  function fmtShort(s){var d=parseDate(s);return d.getDate()+" "+MONTHS[d.getMonth()];}
+  function secOf(id){for(var i=0;i<SECTIONS.length;i++) if(SECTIONS[i].id===id) return SECTIONS[i]; return SECTIONS[0];}
+  function fmtNum(v){return String(v).replace(".",",");}
+
+  function highlight(text){
+    var q=state.q.trim();
+    if(!q) return document.createTextNode(text);
+    var frag=document.createDocumentFragment();
+    var lo=text.toLowerCase(), ql=q.toLowerCase(), i=0, j;
+    while((j=lo.indexOf(ql,i))!==-1){
+      frag.appendChild(document.createTextNode(text.slice(i,j)));
+      frag.appendChild(el("mark",{text:text.slice(j,j+q.length)}));
+      i=j+q.length;
+    }
+    frag.appendChild(document.createTextNode(text.slice(i)));
+    return frag;
+  }
+
+  function matches(it){
+    if(state.section!=="all" && it.section!==state.section) return false;
+    if(state.region!=="all" && it.region && it.region!==state.region) return false;
+    var q=state.q.trim().toLowerCase();
+    if(q){
+      var hay=[it.title,it.text,(it.sources||[]).join(" "),it.kind||"",it.job?Object.values(it.job).join(" "):""].join(" ").toLowerCase();
+      if(hay.indexOf(q)===-1) return false;
+    }
+    return true;
+  }
+
+  function chart(c,color){
+    var max=0; c.bars.forEach(function(b){ if(b.value>max) max=b.value; });
+    max = (c.unit==="%" && max>=85 && max<=100) ? 100 : max*1.12;
+    if(!max) max=1;
+    var box=el("figure",{class:"chart",style:"margin-inline:0;margin-bottom:0"});
+    box.appendChild(el("figcaption",{class:"chart-t",text:c.title}));
+    var bars=el("div",{class:"bars"});
+    c.bars.forEach(function(b){
+      var pct=Math.max(2,Math.min(100,b.value/max*100));
+      bars.appendChild(el("div",{class:"bar"},[
+        el("span",{class:"l",text:b.label}),
+        el("span",{class:"track"},[el("span",{class:"fill",style:"display:block;width:"+pct.toFixed(1)+"%;--c:"+color})]),
+        el("span",{class:"v",text:fmtNum(b.value)+(c.unit==="%"?"%":" "+c.unit)})
+      ]));
+    });
+    box.appendChild(bars);
+    return box;
+  }
+
+  function metaRow(it,date,withDate){
+    var s=secOf(it.section);
+    var row=el("div",{class:"meta"},[
+      el("span",{class:"chip",style:"--c:"+s.color,text:s.name}),
+      it.kind?el("span",{text:it.kind}):null,
+      it.region==="world"?el("span",{class:"flag",text:"Мир"}):null,
+      withDate?el("span",{text:fmtShort(date)}):null
+    ]);
+    return row;
+  }
+
+  function body(it,container,s){
+    if(it.text){ var p=el("p"); p.appendChild(highlight(it.text)); container.appendChild(p); }
+    if(it.job){
+      var dl=el("dl",{class:"job"});
+      [["Компания",it.job.company],["Формат",it.job.format],["Зарплата",it.job.salary],["Контакт",it.job.contact]].forEach(function(r){
+        if(r[1]){ dl.appendChild(el("dt",{text:r[0]})); var dd=el("dd"); dd.appendChild(highlight(String(r[1]))); dl.appendChild(dd); }
+      });
+      container.appendChild(dl);
+    }
+    if(it.image && it.image.src){
+      var fig=el("figure",{style:"margin:6px 0 0"},[el("img",{src:it.image.src,alt:it.image.alt||it.title,loading:"lazy"})]);
+      if(it.image.caption) fig.appendChild(el("figcaption",{class:"cap",text:it.image.caption}));
+      container.appendChild(fig);
+    }
+    if(it.chart && it.chart.bars && it.chart.bars.length) container.appendChild(chart(it.chart,s.color));
+    if(it.links && it.links.length){
+      var l=el("div",{class:"links"});
+      it.links.forEach(function(x){ if(/^https?:\/\//.test(x.url)) l.appendChild(el("a",{href:x.url,target:"_blank",rel:"noopener",text:x.title||x.url})); });
+      container.appendChild(l);
+    }
+    if(it.sources && it.sources.length){
+      var src=el("div",{class:"src"},["Источник: "]);
+      src.appendChild(el("b",{text:it.sources.join(", ")}));
+      container.appendChild(src);
+    }
+  }
+
+  function renderTabs(){
+    var counts={all:0};
+    days.forEach(function(d){ d.items.forEach(function(it){ counts.all++; counts[it.section]=(counts[it.section]||0)+1; }); });
+    var tabs=document.getElementById("tabs"); tabs.textContent="";
+    SECTIONS.forEach(function(s){
+      var b=el("button",{type:"button",class:"tab",role:"tab","aria-selected":String(state.section===s.id),"data-s":s.id},[
+        s.color?el("span",{class:"dot",style:"--c:"+s.color}):null,
+        s.name,
+        el("span",{class:"n",text:String(counts[s.id]||0)})
+      ]);
+      b.addEventListener("click",function(){
+        state.section=s.id;
+        try{ history.replaceState(null,"",s.id==="all"?location.pathname+location.search:"#"+s.id); }catch(e){}
+        renderTabs(); render();
+      });
+      tabs.appendChild(b);
+    });
+  }
+
+  function render(){
+    var main=document.getElementById("main"); main.textContent="";
+    var filtered=days.map(function(d){ return {date:d.date,items:d.items.filter(matches)}; }).filter(function(d){ return d.items.length; });
+
+    if(!filtered.length){
+      var e=EMPTY[state.section];
+      if(state.q.trim()) e=["Ничего не найдено","По запросу «"+state.q.trim()+"» совпадений нет. Попробуйте другое слово или выберите «Все»."];
+      else if(!e) e=["Материалов пока нет","Первый выпуск появится утром."];
+      main.appendChild(el("section",{class:"empty"},[el("h3",{text:e[0]}),el("p",{text:e[1]})]));
+      return;
+    }
+
+    // Lead: first item marked lead in newest day, otherwise first item with a chart, otherwise first item
+    var leadItem=null, leadDate=null;
+    if(!state.q.trim()){
+      var top=filtered[0];
+      leadItem=top.items.filter(function(i){return i.lead;})[0]||null;
+      if(!leadItem){
+        for(var di=0;di<filtered.length && !leadItem;di++){
+          var c=filtered[di].items.filter(function(i){return i.lead;})[0];
+          if(c && di<3){ leadItem=c; leadDate=filtered[di].date; }
+        }
+      }
+      if(!leadItem) leadItem=top.items[0];
+      if(!leadDate) leadDate=(filtered.filter(function(d){return d.items.indexOf(leadItem)>-1;})[0]||top).date;
+    }
+
+    if(leadItem){
+      var s=secOf(leadItem.section);
+      var left=el("div",null,[metaRow(leadItem,leadDate,true)]);
+      var h=el("h2"); h.appendChild(highlight(leadItem.title)); left.appendChild(h);
+      if(leadItem.text){ var p=el("p"); p.appendChild(highlight(leadItem.text)); left.appendChild(p); }
+      if(leadItem.sources){ var src=el("div",{class:"src"},["Источник: "]); src.appendChild(el("b",{text:leadItem.sources.join(", ")})); left.appendChild(src); }
+      var right=el("div",{class:"side"});
+      if(leadItem.image && leadItem.image.src){
+        right.appendChild(el("figure",{style:"margin:0"},[el("img",{src:leadItem.image.src,alt:leadItem.image.alt||leadItem.title}),leadItem.image.caption?el("figcaption",{class:"cap",text:leadItem.image.caption}):null]));
+      }
+      if(leadItem.chart) right.appendChild(chart(leadItem.chart,s.color));
+      var leadEl=el("section",{class:"lead","aria-label":"Главное"},[left]);
+      if(right.childNodes.length) leadEl.appendChild(right); else leadEl.style.gridTemplateColumns="1fr";
+      main.appendChild(leadEl);
+    }
+
+    filtered.forEach(function(d){
+      var items=d.items.filter(function(i){return i!==leadItem;});
+      if(!items.length) return;
+      var sec=el("section",{class:"day"},[
+        el("div",{class:"day-head"},[el("h3",{text:fmtDay(d.date)}),el("span",{class:"count",text:items.length+" "+plural(items.length,["материал","материала","материалов"])})])
+      ]);
+      var grid=el("div",{class:"grid"});
+      items.forEach(function(it){
+        var s=secOf(it.section);
+        var art=el("article",{class:"item"+(it.chart||it.image?" ":"")});
+        art.appendChild(metaRow(it,d.date,false));
+        var h4=el("h4"); h4.appendChild(highlight(it.title)); art.appendChild(h4);
+        body(it,art,s);
+        grid.appendChild(art);
+      });
+      sec.appendChild(grid);
+      main.appendChild(sec);
+    });
+  }
+
+  function plural(n,f){var a=n%10,b=n%100; if(a===1&&b!==11) return f[0]; if(a>=2&&a<=4&&(b<12||b>14)) return f[1]; return f[2];}
+
+  document.getElementById("region").addEventListener("click",function(e){
+    var b=e.target.closest("button"); if(!b) return;
+    state.region=b.getAttribute("data-r");
+    Array.prototype.forEach.call(this.querySelectorAll("button"),function(x){x.setAttribute("aria-pressed",String(x===b));});
+    render();
+  });
+  var t=null;
+  document.getElementById("q").addEventListener("input",function(e){
+    clearTimeout(t); var v=e.target.value; t=setTimeout(function(){ state.q=v; render(); },120);
+  });
+
+  function header(){
+    var n=0; days.forEach(function(d){n+=d.items.length;});
+    document.getElementById("issue").textContent = days.length ? "Выпуск от "+fmtShort(days[0].date)+" · "+n+" "+plural(n,["материал","материала","материалов"])+" в архиве" : "Архив пуст";
+    if(updated){
+      var d=new Date(updated);
+      if(!isNaN(d)) document.getElementById("updated").textContent="Обновлено "+d.getDate()+" "+MONTHS[d.getMonth()]+", "+String(d.getHours()).padStart(2,"0")+":"+String(d.getMinutes()).padStart(2,"0");
+    }
+  }
+
+  fetch("data/index.json",{cache:"no-store"}).then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(function(idx){
+    updated=idx.updated||null;
+    var list=(idx.days||[]).slice().sort().reverse();
+    return Promise.all(list.map(function(d){
+      return fetch("data/days/"+d+".json",{cache:"no-store"}).then(function(r){ return r.ok?r.json():{date:d,items:[]}; }).catch(function(){ return {date:d,items:[]}; });
+    }));
+  })
+  .then(function(res){
+    days=res.filter(function(d){return d && d.items;}).map(function(d){ return {date:d.date,items:d.items}; });
+    header(); renderTabs(); render();
+  })
+  .catch(function(){
+    document.getElementById("issue").textContent="Не удалось загрузить выпуск";
+    renderTabs();
+    document.getElementById("main").appendChild(el("section",{class:"empty"},[el("h3",{text:"Новости не загрузились"}),el("p",{text:"Обновите страницу. Если ошибка повторяется, выпуск ещё публикуется — загляните через пару минут."})]));
+  });
+})();
+</script>
