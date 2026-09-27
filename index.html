@@ -13,6 +13,8 @@
   --rule-strong:#15171B;
   --accent:#2C44C4;
   --ads:#B8431C;
+  --world:#9A6400;
+  --law:#55606E;
   --ai:#2C44C4;
   --jobs:#0F7458;
   --design:#8438AA;
@@ -34,6 +36,8 @@
     --rule-strong:#ECEDE9;
     --accent:#8C9DF5;
     --ads:#F08A5E;
+    --world:#E2B14F;
+    --law:#AEB7C3;
     --ai:#8C9DF5;
     --jobs:#4CC59F;
     --design:#CB8BEA;
@@ -52,6 +56,8 @@
   --rule-strong:#ECEDE9;
   --accent:#8C9DF5;
   --ads:#F08A5E;
+  --world:#E2B14F;
+  --law:#AEB7C3;
   --ai:#8C9DF5;
   --jobs:#4CC59F;
   --design:#CB8BEA;
@@ -155,16 +161,11 @@ mark{background:color-mix(in srgb,var(--accent) 22%,transparent);color:inherit;b
       <span id="updated"></span>
     </div>
     <h1 class="wordmark">Утренняя <span>вёрстка</span></h1>
-    <p class="lede">Факты из Telegram-каналов о рекламе, нейросетях, дизайне и работе. Без мнений авторов, мемов и рекламных постов. Обновляется каждое утро.</p>
+    <p class="lede">Факты из Telegram-каналов и отраслевых изданий о рекламе в России и мире, нейросетях, дизайне и работе. Без мнений авторов, мемов и рекламных постов. Обновляется каждое утро.</p>
   </header>
 
   <nav class="controls" aria-label="Разделы">
     <div class="tabs" role="tablist" id="tabs"></div>
-    <div class="region" role="group" aria-label="География" id="region">
-      <button type="button" data-r="all" aria-pressed="true">Везде</button>
-      <button type="button" data-r="ru" aria-pressed="false">Россия</button>
-      <button type="button" data-r="world" aria-pressed="false">Мир</button>
-    </div>
     <label class="search">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none"></circle><path d="M20 20l-3.5-3.5" fill="none"></path></svg>
       <input id="q" type="search" placeholder="Поиск по всем выпускам" aria-label="Поиск по всем выпускам" autocomplete="off">
@@ -174,7 +175,7 @@ mark{background:color-mix(in srgb,var(--accent) 22%,transparent);color:inherit;b
   <main id="main"></main>
 
   <footer class="note">
-    <span>Источники — каналы из папок Telegram: Реклама, AI, Вакансии, Дизайн.</span>
+    <span>Источники — Telegram-каналы и отраслевые издания: Sostav, AdIndex, Cossa, vc.ru, New Retail, АКАР, Adweek, Campaign, Ads of the World, LBB, It’s Nice That, Brand New.</span>
     <span>Цифры приведены так, как их опубликовали каналы; первоисточник указан в тексте.</span>
   </footer>
 </div>
@@ -183,21 +184,25 @@ mark{background:color-mix(in srgb,var(--accent) 22%,transparent);color:inherit;b
 (function(){
   var SECTIONS=[
     {id:"all",name:"Все"},
-    {id:"ads",name:"Реклама",color:"var(--ads)"},
+    {id:"ads-ru",name:"Реклама Россия",color:"var(--ads)"},
+    {id:"ads-world",name:"Реклама Global",color:"var(--world)"},
+    {id:"law",name:"Закон и маркировка",color:"var(--law)"},
     {id:"ai",name:"AI",color:"var(--ai)"},
     {id:"jobs",name:"Вакансии",color:"var(--jobs)"},
     {id:"design",name:"Дизайн",color:"var(--design)"}
   ];
   var EMPTY={
     jobs:["Вакансий пока нет","Раздел начнёт наполняться с ближайшего утреннего выпуска: должность, компания, формат, зарплата и контакт."],
-    design:["Раздел готовится","Здесь будут примеры интересного дизайна и новости индустрии. Добавьте каналы в папку «Дизайн» в Telegram — они попадут в выпуск."],
+    design:["Раздел готовится","Здесь будут новые айдентики, ребрендинги и примеры интересного дизайна. Первые материалы появятся с ближайшего утреннего выпуска."],
     ai:["Новостей об ИИ пока нет","Материалы появятся с ближайшего утреннего выпуска."],
-    ads:["Новостей о рекламе пока нет","Материалы появятся с ближайшего утреннего выпуска."]
+    "ads-ru":["Новостей российской рекламы пока нет","Материалы появятся с ближайшего утреннего выпуска."],
+    "ads-world":["Мировых новостей рекламы пока нет","Материалы появятся с ближайшего утреннего выпуска."],
+    law:["Изменений в законах пока нет","Здесь будут решения ФАС, изменения закона о рекламе и правил маркировки."]
   };
   var MONTHS=["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
   var WD=["Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота"];
 
-  var state={section:"all",region:"all",q:""};
+  var state={section:"all",q:""};
   var days=[];      // [{date, items}]
   var updated=null;
 
@@ -238,7 +243,6 @@ mark{background:color-mix(in srgb,var(--accent) 22%,transparent);color:inherit;b
 
   function matches(it){
     if(state.section!=="all" && it.section!==state.section) return false;
-    if(state.region!=="all" && it.region && it.region!==state.region) return false;
     var q=state.q.trim().toLowerCase();
     if(q){
       var hay=[it.title,it.text,(it.sources||[]).join(" "),it.kind||"",it.job?Object.values(it.job).join(" "):""].join(" ").toLowerCase();
@@ -271,7 +275,6 @@ mark{background:color-mix(in srgb,var(--accent) 22%,transparent);color:inherit;b
     var row=el("div",{class:"meta"},[
       el("span",{class:"chip",style:"--c:"+s.color,text:s.name}),
       it.kind?el("span",{text:it.kind}):null,
-      it.region==="world"?el("span",{class:"flag",text:"Мир"}):null,
       withDate?el("span",{text:fmtShort(date)}):null
     ]);
     return row;
@@ -388,12 +391,6 @@ mark{background:color-mix(in srgb,var(--accent) 22%,transparent);color:inherit;b
 
   function plural(n,f){var a=n%10,b=n%100; if(a===1&&b!==11) return f[0]; if(a>=2&&a<=4&&(b<12||b>14)) return f[1]; return f[2];}
 
-  document.getElementById("region").addEventListener("click",function(e){
-    var b=e.target.closest("button"); if(!b) return;
-    state.region=b.getAttribute("data-r");
-    Array.prototype.forEach.call(this.querySelectorAll("button"),function(x){x.setAttribute("aria-pressed",String(x===b));});
-    render();
-  });
   var t=null;
   document.getElementById("q").addEventListener("input",function(e){
     clearTimeout(t); var v=e.target.value; t=setTimeout(function(){ state.q=v; render(); },120);
