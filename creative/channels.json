@@ -68,5 +68,19 @@
     "username": "okkomovies",
     "type": "brand",
     "added": "2026-09-27"
+  },
+  {
+    "id": "1429380073",
+    "title": "ВкусВилл",
+    "username": "we_are_vkusvill",
+    "type": "brand",
+    "added": "2026-09-28"
+  },
+  {
+    "id": "2122445154",
+    "title": "Яндекс Еда",
+    "username": "yandexedachannel",
+    "type": "brand",
+    "added": "2026-09-28"
   }
 ]
