@@ -82,5 +82,33 @@
     "username": "yandexedachannel",
     "type": "brand",
     "added": "2026-09-28"
+  },
+  {
+    "id": "1195426632",
+    "title": "Яндекс Музыка",
+    "username": "yandexmusic_live",
+    "type": "brand",
+    "added": "2026-09-29"
+  },
+  {
+    "id": "1054379697",
+    "title": "ЛЭТУАЛЬ",
+    "username": "letoileofficial",
+    "type": "brand",
+    "added": "2026-09-29"
+  },
+  {
+    "id": "1572351098",
+    "title": "Перекрёсток",
+    "username": "perekrestok_store",
+    "type": "brand",
+    "added": "2026-09-29"
+  },
+  {
+    "id": "1072169937",
+    "title": "билайн",
+    "username": "beeline",
+    "type": "brand",
+    "added": "2026-09-29"
   }
 ]

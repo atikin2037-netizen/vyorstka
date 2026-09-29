@@ -76,5 +76,313 @@
     "msg": 12724,
     "date": "2026-09-27",
     "format": "фейковое прощание как анонс фичи"
+  },
+  {
+    "chat": "@we_are_vkusvill",
+    "msg": 9642,
+    "date": "2026-09-29",
+    "format": "игра в комментариях стикерами",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12388,
+    "date": "2026-09-29",
+    "format": "«продолжите фразу», тизер",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12389,
+    "date": "2026-09-29",
+    "format": "«продолжите фразу», тизер",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12390,
+    "date": "2026-09-29",
+    "format": "альбом + голосование реакциями",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12391,
+    "date": "2026-09-29",
+    "format": "альбом + голосование реакциями",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12392,
+    "date": "2026-09-29",
+    "format": "альбом + голосование реакциями",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12393,
+    "date": "2026-09-29",
+    "format": "альбом + голосование реакциями",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12394,
+    "date": "2026-09-29",
+    "format": "альбом + голосование реакциями",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12395,
+    "date": "2026-09-29",
+    "format": "альбом + голосование реакциями",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12396,
+    "date": "2026-09-29",
+    "format": "альбом + голосование реакциями",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12397,
+    "date": "2026-09-29",
+    "format": "альбом + голосование реакциями",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12398,
+    "date": "2026-09-29",
+    "format": "альбом + голосование реакциями",
+    "project": "general"
+  },
+  {
+    "chat": "@we_are_vkusvill",
+    "msg": 9638,
+    "date": "2026-09-29",
+    "format": "кликабельная эмодзи-сетка",
+    "project": "general"
+  },
+  {
+    "chat": "@samokatwithlove",
+    "msg": 4902,
+    "date": "2026-09-29",
+    "format": "эмодзи-вёрстка + добрая история",
+    "project": "general"
+  },
+  {
+    "chat": "@letoileofficial",
+    "msg": 27643,
+    "date": "2026-09-29",
+    "format": "розыгрыш с порогом реакций",
+    "project": "general"
+  },
+  {
+    "chat": "@letoileofficial",
+    "msg": 27647,
+    "date": "2026-09-29",
+    "format": "тизер-загадка с версиями в комментариях",
+    "project": "general"
+  },
+  {
+    "chat": "@perekrestok_store",
+    "msg": 4283,
+    "date": "2026-09-29",
+    "format": "эмодзи-коробка со спойлером",
+    "project": "general"
+  },
+  {
+    "chat": "@beeline",
+    "msg": 3843,
+    "date": "2026-09-29",
+    "format": "сериальная эстафета брендов",
+    "project": "general"
+  },
+  {
+    "chat": "@vit_russia",
+    "msg": 2100,
+    "date": "2026-09-29",
+    "format": "опрос на фирменных эмодзи",
+    "project": "general"
+  },
+  {
+    "chat": "@kinopoisk",
+    "msg": 54082,
+    "date": "2026-09-29",
+    "format": "вертикальное видео-«адвокат»",
+    "project": "general"
+  },
+  {
+    "chat": "@kuper_ru",
+    "msg": 4990,
+    "date": "2026-09-29",
+    "format": "мини-сериал",
+    "project": "general"
+  },
+  {
+    "chat": "@careersber",
+    "msg": 4164,
+    "date": "2026-09-29",
+    "format": "эмодзи-сценка + видео-дайджест вакансий",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@careersber",
+    "msg": 4151,
+    "date": "2026-09-29",
+    "format": "эстафета амбассадоров",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@rosatom_career",
+    "msg": 4756,
+    "date": "2026-09-29",
+    "format": "гороскоп к профпразднику",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@career_sibur",
+    "msg": 224,
+    "date": "2026-09-29",
+    "format": "альбом «профессия в цифрах»",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@career_sibur",
+    "msg": 225,
+    "date": "2026-09-29",
+    "format": "альбом «профессия в цифрах»",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@career_sibur",
+    "msg": 226,
+    "date": "2026-09-29",
+    "format": "альбом «профессия в цифрах»",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@career_sibur",
+    "msg": 227,
+    "date": "2026-09-29",
+    "format": "альбом «профессия в цифрах»",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@career_sibur",
+    "msg": 228,
+    "date": "2026-09-29",
+    "format": "альбом «профессия в цифрах»",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@career_sibur",
+    "msg": 229,
+    "date": "2026-09-29",
+    "format": "альбом «профессия в цифрах»",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@vit_russia",
+    "msg": 2089,
+    "date": "2026-09-29",
+    "format": "гость-стажёр на смену",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@dachnyagronom",
+    "msg": 9483,
+    "date": "2026-09-29",
+    "format": "лагеря на реакциях",
+    "project": "eurochem"
+  },
+  {
+    "chat": "@dachnyagronom",
+    "msg": 9463,
+    "date": "2026-09-29",
+    "format": "разбор мифа + перешлите",
+    "project": "eurochem"
+  },
+  {
+    "chat": "@we_are_vkusvill",
+    "msg": 9636,
+    "date": "2026-09-29",
+    "format": "карточки-рационы + голосование",
+    "project": "eurochem"
+  },
+  {
+    "chat": "@we_are_vkusvill",
+    "msg": 9637,
+    "date": "2026-09-29",
+    "format": "карточки-рационы + голосование",
+    "project": "eurochem"
+  },
+  {
+    "chat": "@rostselmash_official",
+    "msg": 4122,
+    "date": "2026-09-29",
+    "format": "экскурсия глазами гостя",
+    "project": "eurochem"
+  },
+  {
+    "chat": "@rostselmash_official",
+    "msg": 4123,
+    "date": "2026-09-29",
+    "format": "экскурсия глазами гостя",
+    "project": "eurochem"
+  },
+  {
+    "chat": "@rostselmash_official",
+    "msg": 4124,
+    "date": "2026-09-29",
+    "format": "экскурсия глазами гостя",
+    "project": "eurochem"
+  },
+  {
+    "chat": "@KULTIVATORONLINE",
+    "msg": 4243,
+    "date": "2026-09-29",
+    "format": "видеоразбор полевого опыта",
+    "project": "eurochem"
+  },
+  {
+    "chat": "@championpsyche",
+    "msg": 554,
+    "date": "2026-09-29",
+    "format": "видео с паузами для ребёнка",
+    "project": "firststep"
+  },
+  {
+    "chat": "@championpsyche",
+    "msg": 558,
+    "date": "2026-09-29",
+    "format": "текст «покажите ребёнку»",
+    "project": "firststep"
+  },
+  {
+    "chat": "@hcska",
+    "msg": 35769,
+    "date": "2026-09-29",
+    "format": "голосование + совпал ли выбор",
+    "project": "firststep"
+  },
+  {
+    "chat": "@hcska",
+    "msg": 35770,
+    "date": "2026-09-29",
+    "format": "коллаборация с мультфильмами",
+    "project": "firststep"
+  },
+  {
+    "chat": "@samokatwithlove",
+    "msg": 4918,
+    "date": "2026-09-29",
+    "format": "видео + выбор реакцией",
+    "project": "firststep"
   }
 ]
