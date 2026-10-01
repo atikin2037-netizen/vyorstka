@@ -110,5 +110,54 @@
     "username": "beeline",
     "type": "brand",
     "added": "2026-09-29"
+  },
+  {
+    "id": "1143808722",
+    "title": "Золотое Яблоко",
+    "username": "goldapple_ru",
+    "type": "brand",
+    "added": "2026-10-01"
+  },
+  {
+    "id": "1783015913",
+    "title": "Авиакомпания «Победа»",
+    "username": "PobedaAirlines",
+    "type": "brand",
+    "added": "2026-10-01"
+  },
+  {
+    "id": "1228673426",
+    "title": "Сбер",
+    "username": "sberbank",
+    "type": "brand",
+    "added": "2026-10-01"
+  },
+  {
+    "id": "1544572638",
+    "title": "WILDBERRIES",
+    "username": "wildberriesru_official",
+    "type": "brand",
+    "added": "2026-10-01"
+  },
+  {
+    "id": "1517312714",
+    "title": "OZON",
+    "username": "ozonru",
+    "type": "brand",
+    "added": "2026-10-01"
+  },
+  {
+    "id": "1426681253",
+    "title": "S7 Airlines",
+    "username": "s7airlines",
+    "type": "brand",
+    "added": "2026-10-01"
+  },
+  {
+    "id": "1792550483",
+    "title": "Спортмастер",
+    "username": "sportmasterofficial",
+    "type": "brand",
+    "added": "2026-10-01"
   }
 ]

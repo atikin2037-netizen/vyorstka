@@ -384,5 +384,558 @@
     "date": "2026-09-29",
     "format": "видео + выбор реакцией",
     "project": "firststep"
+  },
+  {
+    "chat": "@goldapple_ru",
+    "msg": 28727,
+    "date": "2026-10-01",
+    "format": "розыгрыш через бота",
+    "project": "general"
+  },
+  {
+    "chat": "@letoileofficial",
+    "msg": 27682,
+    "date": "2026-10-01",
+    "format": "розыгрыш с порогом реакций",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12401,
+    "date": "2026-10-01",
+    "format": "гостевой редактор",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12414,
+    "date": "2026-10-01",
+    "format": "карусель-коллаборация с голосованием",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12415,
+    "date": "2026-10-01",
+    "format": "карусель-коллаборация с голосованием",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12416,
+    "date": "2026-10-01",
+    "format": "карусель-коллаборация с голосованием",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12417,
+    "date": "2026-10-01",
+    "format": "карусель-коллаборация с голосованием",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12418,
+    "date": "2026-10-01",
+    "format": "карусель-коллаборация с голосованием",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12419,
+    "date": "2026-10-01",
+    "format": "карусель-коллаборация с голосованием",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12420,
+    "date": "2026-10-01",
+    "format": "карусель-коллаборация с голосованием",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12421,
+    "date": "2026-10-01",
+    "format": "карусель-коллаборация с голосованием",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexmusic_live",
+    "msg": 12422,
+    "date": "2026-10-01",
+    "format": "карусель-коллаборация с голосованием",
+    "project": "general"
+  },
+  {
+    "chat": "@okkomovies",
+    "msg": 29438,
+    "date": "2026-10-01",
+    "format": "игра на реакциях «баланс»",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexedachannel",
+    "msg": 3085,
+    "date": "2026-10-01",
+    "format": "интерактивная история на реакциях",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexedachannel",
+    "msg": 3086,
+    "date": "2026-10-01",
+    "format": "интерактивная история на реакциях",
+    "project": "general"
+  },
+  {
+    "chat": "@yandexedachannel",
+    "msg": 3087,
+    "date": "2026-10-01",
+    "format": "интерактивная история на реакциях",
+    "project": "general"
+  },
+  {
+    "chat": "@samokatwithlove",
+    "msg": 4932,
+    "date": "2026-10-01",
+    "format": "типографика из premium-эмодзи",
+    "project": "general"
+  },
+  {
+    "chat": "@samokatwithlove",
+    "msg": 4930,
+    "date": "2026-10-01",
+    "format": "вертикальное видео-история",
+    "project": "general"
+  },
+  {
+    "chat": "@PobedaAirlines",
+    "msg": 1720,
+    "date": "2026-10-01",
+    "format": "офлайн-спецпроект",
+    "project": "general"
+  },
+  {
+    "chat": "@letoileofficial",
+    "msg": 27670,
+    "date": "2026-10-01",
+    "format": "серия в реальном времени",
+    "project": "general"
+  },
+  {
+    "chat": "@letoileofficial",
+    "msg": 27671,
+    "date": "2026-10-01",
+    "format": "серия в реальном времени",
+    "project": "general"
+  },
+  {
+    "chat": "@letoileofficial",
+    "msg": 27672,
+    "date": "2026-10-01",
+    "format": "серия в реальном времени",
+    "project": "general"
+  },
+  {
+    "chat": "@letoileofficial",
+    "msg": 27673,
+    "date": "2026-10-01",
+    "format": "серия в реальном времени",
+    "project": "general"
+  },
+  {
+    "chat": "@letoileofficial",
+    "msg": 27674,
+    "date": "2026-10-01",
+    "format": "серия в реальном времени",
+    "project": "general"
+  },
+  {
+    "chat": "@letoileofficial",
+    "msg": 27675,
+    "date": "2026-10-01",
+    "format": "серия в реальном времени",
+    "project": "general"
+  },
+  {
+    "chat": "@wildberriesru_official",
+    "msg": 14714,
+    "date": "2026-10-01",
+    "format": "детективная серия на день",
+    "project": "general"
+  },
+  {
+    "chat": "@kinopoisk",
+    "msg": 54104,
+    "date": "2026-10-01",
+    "format": "шутка под интерфейс",
+    "project": "general"
+  },
+  {
+    "chat": "@we_are_vkusvill",
+    "msg": 9652,
+    "date": "2026-10-01",
+    "format": "видео-квиз с разгадкой",
+    "project": "general"
+  },
+  {
+    "chat": "@we_are_vkusvill",
+    "msg": 9653,
+    "date": "2026-10-01",
+    "format": "видео-квиз с разгадкой",
+    "project": "general"
+  },
+  {
+    "chat": "@we_are_vkusvill",
+    "msg": 9654,
+    "date": "2026-10-01",
+    "format": "видео-квиз с разгадкой",
+    "project": "general"
+  },
+  {
+    "chat": "@we_are_vkusvill",
+    "msg": 9655,
+    "date": "2026-10-01",
+    "format": "видео-квиз с разгадкой",
+    "project": "general"
+  },
+  {
+    "chat": "@we_are_vkusvill",
+    "msg": 9656,
+    "date": "2026-10-01",
+    "format": "видео-квиз с разгадкой",
+    "project": "general"
+  },
+  {
+    "chat": "@we_are_vkusvill",
+    "msg": 9657,
+    "date": "2026-10-01",
+    "format": "видео-квиз с разгадкой",
+    "project": "general"
+  },
+  {
+    "chat": "@s7airlines",
+    "msg": 3828,
+    "date": "2026-10-01",
+    "format": "карточки-сравнение",
+    "project": "general"
+  },
+  {
+    "chat": "@s7airlines",
+    "msg": 3829,
+    "date": "2026-10-01",
+    "format": "карточки-сравнение",
+    "project": "general"
+  },
+  {
+    "chat": "@s7airlines",
+    "msg": 3830,
+    "date": "2026-10-01",
+    "format": "карточки-сравнение",
+    "project": "general"
+  },
+  {
+    "chat": "@s7airlines",
+    "msg": 3831,
+    "date": "2026-10-01",
+    "format": "карточки-сравнение",
+    "project": "general"
+  },
+  {
+    "chat": "@s7airlines",
+    "msg": 3832,
+    "date": "2026-10-01",
+    "format": "карточки-сравнение",
+    "project": "general"
+  },
+  {
+    "chat": "@s7airlines",
+    "msg": 3833,
+    "date": "2026-10-01",
+    "format": "карточки-сравнение",
+    "project": "general"
+  },
+  {
+    "chat": "@s7airlines",
+    "msg": 3834,
+    "date": "2026-10-01",
+    "format": "карточки-сравнение",
+    "project": "general"
+  },
+  {
+    "chat": "@s7airlines",
+    "msg": 3835,
+    "date": "2026-10-01",
+    "format": "карточки-сравнение",
+    "project": "general"
+  },
+  {
+    "chat": "@sberbank",
+    "msg": 6333,
+    "date": "2026-10-01",
+    "format": "кружок-интервью",
+    "project": "general"
+  },
+  {
+    "chat": "@sberbank",
+    "msg": 6334,
+    "date": "2026-10-01",
+    "format": "кружок-интервью",
+    "project": "general"
+  },
+  {
+    "chat": "@rosatom_career",
+    "msg": 4750,
+    "date": "2026-10-01",
+    "format": "карусель-интервью",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@rosatom_career",
+    "msg": 4751,
+    "date": "2026-10-01",
+    "format": "карусель-интервью",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@rosatom_career",
+    "msg": 4752,
+    "date": "2026-10-01",
+    "format": "карусель-интервью",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@rosatom_career",
+    "msg": 4753,
+    "date": "2026-10-01",
+    "format": "карусель-интервью",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@rosatom_career",
+    "msg": 4754,
+    "date": "2026-10-01",
+    "format": "карусель-интервью",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@rosatom_career",
+    "msg": 4755,
+    "date": "2026-10-01",
+    "format": "карусель-интервью",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@careersber",
+    "msg": 4162,
+    "date": "2026-10-01",
+    "format": "ситуативное видео без слов",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@careersber",
+    "msg": 4163,
+    "date": "2026-10-01",
+    "format": "ситуативное видео без слов",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@vkomande_gazpromneft",
+    "msg": 2083,
+    "date": "2026-10-01",
+    "format": "аудиорубрика стажёров",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@vkomande_gazpromneft",
+    "msg": 2084,
+    "date": "2026-10-01",
+    "format": "аудиорубрика стажёров",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@career_sibur",
+    "msg": 232,
+    "date": "2026-10-01",
+    "format": "альбом с вертикальными видео",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@career_sibur",
+    "msg": 233,
+    "date": "2026-10-01",
+    "format": "альбом с вертикальными видео",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@career_sibur",
+    "msg": 234,
+    "date": "2026-10-01",
+    "format": "альбом с вертикальными видео",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@career_sibur",
+    "msg": 235,
+    "date": "2026-10-01",
+    "format": "альбом с вертикальными видео",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@career_sibur",
+    "msg": 236,
+    "date": "2026-10-01",
+    "format": "альбом с вертикальными видео",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@career_sibur",
+    "msg": 237,
+    "date": "2026-10-01",
+    "format": "альбом с вертикальными видео",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@severstal_career_official",
+    "msg": 2165,
+    "date": "2026-10-01",
+    "format": "видео-тур + реакция",
+    "project": "nornickel"
+  },
+  {
+    "chat": "@dachnyagronom",
+    "msg": 9475,
+    "date": "2026-10-01",
+    "format": "вопрос + аудиоразбор",
+    "project": "eurochem"
+  },
+  {
+    "chat": "@dachnyagronom",
+    "msg": 9476,
+    "date": "2026-10-01",
+    "format": "вопрос + аудиоразбор",
+    "project": "eurochem"
+  },
+  {
+    "chat": "@dachnyagronom",
+    "msg": 9487,
+    "date": "2026-10-01",
+    "format": "загадка с отложенной разгадкой",
+    "project": "eurochem"
+  },
+  {
+    "chat": "@dachnyagronom",
+    "msg": 9500,
+    "date": "2026-10-01",
+    "format": "загадка с отложенной разгадкой",
+    "project": "eurochem"
+  },
+  {
+    "chat": "@rostselmash_official",
+    "msg": 4132,
+    "date": "2026-10-01",
+    "format": "видео за кулисами",
+    "project": "eurochem"
+  },
+  {
+    "chat": "@we_are_vkusvill",
+    "msg": 9663,
+    "date": "2026-10-01",
+    "format": "видео-угадайка на реакциях",
+    "project": "eurochem"
+  },
+  {
+    "chat": "@we_are_vkusvill",
+    "msg": 9664,
+    "date": "2026-10-01",
+    "format": "видео-угадайка на реакциях",
+    "project": "eurochem"
+  },
+  {
+    "chat": "@tbank",
+    "msg": 11152,
+    "date": "2026-10-01",
+    "format": "видеоинструкция",
+    "project": "eurochem"
+  },
+  {
+    "chat": "@khl_official_telegram",
+    "msg": 55368,
+    "date": "2026-10-01",
+    "format": "голосование эмодзи",
+    "project": "firststep"
+  },
+  {
+    "chat": "@khl_official_telegram",
+    "msg": 55366,
+    "date": "2026-10-01",
+    "format": "рубрика-бинго",
+    "project": "firststep"
+  },
+  {
+    "chat": "@hcska",
+    "msg": 35841,
+    "date": "2026-10-01",
+    "format": "плейлист в комментариях",
+    "project": "firststep"
+  },
+  {
+    "chat": "@hcska",
+    "msg": 35842,
+    "date": "2026-10-01",
+    "format": "плейлист в комментариях",
+    "project": "firststep"
+  },
+  {
+    "chat": "@championpsyche",
+    "msg": 550,
+    "date": "2026-10-01",
+    "format": "серия по дням недели",
+    "project": "firststep"
+  },
+  {
+    "chat": "@kuper_ru",
+    "msg": 4976,
+    "date": "2026-10-01",
+    "format": "карусель + голосование эмодзи",
+    "project": "firststep"
+  },
+  {
+    "chat": "@kuper_ru",
+    "msg": 4977,
+    "date": "2026-10-01",
+    "format": "карусель + голосование эмодзи",
+    "project": "firststep"
+  },
+  {
+    "chat": "@kuper_ru",
+    "msg": 4978,
+    "date": "2026-10-01",
+    "format": "карусель + голосование эмодзи",
+    "project": "firststep"
+  },
+  {
+    "chat": "@kuper_ru",
+    "msg": 4979,
+    "date": "2026-10-01",
+    "format": "карусель + голосование эмодзи",
+    "project": "firststep"
+  },
+  {
+    "chat": "@kuper_ru",
+    "msg": 4980,
+    "date": "2026-10-01",
+    "format": "карусель + голосование эмодзи",
+    "project": "firststep"
+  },
+  {
+    "chat": "@kuper_ru",
+    "msg": 4981,
+    "date": "2026-10-01",
+    "format": "карусель + голосование эмодзи",
+    "project": "firststep"
   }
 ]
