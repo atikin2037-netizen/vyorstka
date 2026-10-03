@@ -159,5 +159,19 @@
     "username": "sportmasterofficial",
     "type": "brand",
     "added": "2026-10-01"
+  },
+  {
+    "id": "2127843240",
+    "title": "Яндекс Лавка",
+    "username": "yandex_lavka_tg",
+    "type": "brand",
+    "added": "2026-10-03"
+  },
+  {
+    "id": "1863959168",
+    "title": "Бургер Кинг Россия",
+    "username": "burgerkingrf",
+    "type": "brand",
+    "added": "2026-10-03"
   }
 ]
